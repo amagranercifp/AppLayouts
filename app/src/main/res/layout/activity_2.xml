@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity2">
+
+    <!-- Para que el videoview ocupe la totalidad de la pantalla
+     es necesario usar un relative layout y anclar cada lado del vídeo
+     a los extremos del padre-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </RelativeLayout>
+
+    <!-- el FrameLayout nos permite superponer views de una forma cómoda-->
+    <!-- quitamos el fondo para que tome la forma redonda del icono-->
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+
+        android:background="@null"
+        android:src="@drawable/play"
+        android:layout_gravity="center"
+        android:onClick="botonPlay"
+        android:contentDescription="NULL"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonPause"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/stop_button"
+        android:layout_gravity="center"
+        android:onClick="botonPause"
+        android:visibility="invisible"
+        android:contentDescription="NULL"/>
+
+    <ImageButton
+        android:id="@+id/imageButtonVolver"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:background="@null"
+        android:src="@drawable/flecha_volver"
+        android:layout_gravity="bottom|right"
+        android:onClick="botonVolver"
+        android:contentDescription="NULL"/>
+
+
+
+
+</FrameLayout>

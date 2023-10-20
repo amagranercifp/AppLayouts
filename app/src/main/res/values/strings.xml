@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">LinearLayout_1</string>
+
+    <string-array name="arrayModulos">
+        <item>Sistemas informáticos</item>
+        <item>Bases de Datos</item>
+        <item>Programación</item>
+        <item>Lenguajes de marcas</item>
+        <item>Entornos de desarrollo</item>
+        <item>Formación y Orientación Laboral</item>
+        <item>Sistemas informáticos</item>
+        <item>Bases de Datos</item>
+        <item>Programación</item>
+        <item>Lenguajes de marcas</item>
+        <item>Entornos de desarrollo</item>
+        <item>Formación y Orientación Laboral</item>
+        <item>Sistemas informáticos</item>
+        <item>Bases de Datos</item>
+        <item>Programación</item>
+        <item>Lenguajes de marcas</item>
+        <item>Entornos de desarrollo</item>
+        <item>Formación y Orientación Laboral</item>
+
+    </string-array>
+
+</resources>
