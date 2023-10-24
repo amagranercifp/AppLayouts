@@ -30,6 +30,13 @@ public class Activity3 extends AppCompatActivity {
 
         ArrayAdapter<CharSequence> adaptador = ArrayAdapter.createFromResource(this, R.array.arrayModulos, android.R.layout.simple_list_item_1);
         list_modulos.setAdapter(adaptador);
+
+        //Alternativa de carga de valores del array definido en Strings.xml
+
+        String [] listItem = getResources().getStringArray(R.array.arrayModulos);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, listItem);
+        list_modulos.setAdapter(adapter);
     }
 
     public void botonCerrar(View v){

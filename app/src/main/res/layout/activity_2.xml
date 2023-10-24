@@ -29,14 +29,14 @@
 
     <!-- el FrameLayout nos permite superponer views de una forma cómoda-->
     <!-- quitamos el fondo para que tome la forma redonda del icono-->
+    <!-- android:src="@drawable/play" -->
+    <!-- android:background="@null" -->
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="90dp"
         android:layout_height="90dp"
         android:scaleType="centerCrop"
-
-        android:background="@null"
-        android:src="@drawable/play"
+        android:background="@drawable/play"
         android:layout_gravity="center"
         android:onClick="botonPlay"
         android:contentDescription="NULL"/>
